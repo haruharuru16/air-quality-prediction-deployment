@@ -37,7 +37,7 @@ def main():
         result = get_prediction(data_prep, classifier)
 
         # show the data summary and the predicted result
-        summary, predicted = st.columns([1, 2])
+        summary, predicted = st.columns([1, 3])
         with summary:
             st.markdown('**Prediction Summary**')
 
