@@ -67,6 +67,6 @@ def get_prediction(data_prep, classifier):
     elif pred_result == 1:
         result = 'MODERATE'
     else:
-        result = 'BAD (NOT HEALTHY)'
+        result = 'BAD (UNHEALTHY)'
 
     return result
