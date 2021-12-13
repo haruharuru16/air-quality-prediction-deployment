@@ -15,14 +15,16 @@ def main():
 
     # input the data
     # pm10, so2, co, o3, no2
-    col1, col2 = st.columns([1, 1])
+    col1, col2, col3 = st.columns([1, 1, 1])
     with col1:
         pm10 = st.number_input('PM10 Concentration')
         so2 = st.number_input('SO2 Concentration')
-        co = st.number_input('CO Concentration')
 
     with col2:
+        co = st.number_input('CO Concentration')
         o3 = st.number_input('O3 Concentration')
+
+    with col3:
         no2 = st.number_input('NO2 Concentration')
 
     # when the 'Predict' is clicked, make the prediction and store it
